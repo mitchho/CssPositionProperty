@@ -1,0 +1,122 @@
+body * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+nav {
+  height: 90px;
+  background-color: blue;
+  position: fixed;
+  width: 100%;
+ // border-radius: 25px;
+}
+
+/*  this class just gets ignored by
+    the browser
+nav .icon-img {
+  height: 150px;
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ // border-radius: 50%;
+  border-radius: 25px;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+*/
+
+.navIcon {
+  height: 75px;
+  width: 75px;
+  margin-top: 7px;
+ // margin-bottom: 5px;
+  margin-left: 39px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid gray;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li::after {
+  content: "|";
+  margin-left: 5px;
+  color: gray;
+}
+
+a {
+	color: white;
+}
+
+nav a:hover {
+  color: black;
+}
+
+ 
+body {
+  background: url(https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/outerspace_landscape.jpeg) no-repeat;
+   //background: url(../images/outerspaceLandscape.jpeg) no-repeat;
+   background-size: cover;
+   position: relative;
+}
+ 
+/*
+hero-image {
+	background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
+}
+*/
+
+main {
+  padding-top: 90px;
+  min-width: 1000px;
+  min-height: 100%;
+  height: auto;
+//  background: url(../images/outerspaceLandscape.jpeg) no-repeat;
+//  background-size: cover;
+}
+
+.backgroundImg {
+	position: relative;
+	min-height: 100%;
+	height: auto;
+	//background-size: cover;
+}
+ 
+.box {
+  margin-top: 150px;
+  width: 600px;
+  height: 300px;
+  position: absolute;  
+  border: 10px dotted green;
+  margin-left: 350px;
+  margin-right: auto;
+}
+
+
+.spacecat, .spacedog {
+  position: absolute;
+  width: 200px;
+}
+
+.spacecat {
+  top: -90px;
+  left: -90px;
+}
+
+.spacedog {
+  bottom: -120px;
+  right: -60px;
+}
